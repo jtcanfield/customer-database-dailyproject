@@ -1,7 +1,7 @@
 createHeader();
 function createHeader(){
   let setHtml = document.querySelector("html");
-  setHtml.setAttribute("style", "text-align: center; margin: 0px; padding: 0px;");
+  setHtml.setAttribute("style", "text-align: center; margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif;");
   let setHeader = document.querySelector("body");
   let holder = `
   <h1>INTERNAL COMPANY DIRECTORY</h1>

@@ -1,0 +1,6 @@
+span{
+  filter: blur(5px);
+}
+span:hover{
+  filter: blur(0px);
+}
