@@ -11,7 +11,6 @@ function createHeader(){
 }
 let setParent = document.getElementById("flexbox_project_holder");
 for (let i = 0; i < customers.results.length; i++){
-  console.log(customers.results[i]);
   let holder = `
     <div style="margin: 2% 0%;">
       <img src=${customers.results[i].picture.large} style="width: 250px; height: 250px;">
