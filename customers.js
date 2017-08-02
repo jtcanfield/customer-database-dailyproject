@@ -302,3 +302,27 @@ const customers = {"results":[{"gender":"male"
 ,"results":12
 ,"page":1
 ,"version":"1.1"}};
+//BEGIN CODE
+createHeader();
+function createHeader(){
+  let setHeader = document.querySelector("body");
+  let holder = `
+  <h1>INTERNAL COMPANY DIRECTORY</h1>
+  <div id="flexbox_project_holder">
+  </div>
+  `;
+  setHeader.innerHTML = holder;
+}
+let setParent = document.getElementById("flexbox_project_holder");
+for (let i = 0; i < customers.results.length; i++){
+  let newCard = document.createElement("div");
+  setParent.appendChild(newCard);
+  console.log(setParent);
+  console.log(customers.results[i].name.first);
+  let holder = `
+    <h2>${customers.results[i].name.first}</h2>
+    <p></p>
+    <p></p>
+  `;
+  setParent.appendChild ( holder);
+}
