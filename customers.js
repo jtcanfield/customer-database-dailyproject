@@ -308,21 +308,21 @@ function createHeader(){
   let setHeader = document.querySelector("body");
   let holder = `
   <h1>INTERNAL COMPANY DIRECTORY</h1>
-  <div id="flexbox_project_holder">
-  </div>
+  <div id="flexbox_project_holder"></div>
   `;
   setHeader.innerHTML = holder;
 }
 let setParent = document.getElementById("flexbox_project_holder");
 for (let i = 0; i < customers.results.length; i++){
-  let newCard = document.createElement("div");
-  setParent.appendChild(newCard);
+  let newDiv = document.createElement("div");
+  setParent.appendChild(newDiv);
   console.log(setParent);
-  console.log(customers.results[i].name.first);
+  console.log(customers.results[i]);
   let holder = `
     <h2>${customers.results[i].name.first}</h2>
-    <p></p>
-    <p></p>
+    <p>${customers.results[i].email}</p>
+    <p>${customers.results[i].location.street}<br>${customers.results[i].location.city}, ${customers.results[i].location.state} ${customers.results[i].location.postcode}<br>${customers.results[i].cell}<br></p>
+    <span>${customers.results[i].id.value}</span>
   `;
-  setParent.appendChild ( holder);
+  newDiv.innerHTML = holder;
 }
