@@ -1,8 +1,22 @@
 span{
   filter: blur(5px);
+  transition: 0.5s;
 }
 span:hover{
   filter: blur(0px);
+}
+img{
+  transition: 0.5s;
+}
+img:hover{
+  transform: scale(1.1);
+}
+#email_holder{
+  transition: 0.5s;
+  opacity: 0.5;
+}
+#email_holder:hover{
+  opacity: 1;
 }
 p{
   text-transform: capitalize;
