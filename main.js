@@ -17,7 +17,7 @@ for (let i = 0; i < customers.results.length; i++){
   let holder = `
     <div style="margin: 2% 0%;">
       <img src=${customers.results[i].picture.large} style="width: 250px; height: 250px;">
-      <h2 style="text-decoration: underline; text-decoration-color: #5BFFC0;">${customers.results[i].name.first.toUpperCase()} ${customers.results[i].name.last.toUpperCase()}</h2>
+      <h2 style="text-decoration: underline; text-decoration-color: #5BFFC0; font-size: 20px;">${customers.results[i].name.first.toUpperCase()} ${customers.results[i].name.last.toUpperCase()}</h2>
       <p style="font-size: 13px; opacity: 0.5;">${customers.results[i].email.toUpperCase()}</p>
       <p>${customers.results[i].location.street}<br>${customers.results[i].location.city}, ${customers.results[i].location.state} ${customers.results[i].location.postcode}<br>${customers.results[i].cell}<br></p>
       <span>${customers.results[i].id.value}</span>

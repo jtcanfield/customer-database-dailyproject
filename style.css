@@ -4,3 +4,6 @@ span{
 span:hover{
   filter: blur(0px);
 }
+p{
+  text-transform: capitalize;
+}
