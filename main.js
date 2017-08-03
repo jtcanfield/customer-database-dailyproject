@@ -22,7 +22,8 @@ let createPage = () => {
   }
 }
 createPage();
-/*JTS WORKING MAP CODE
+/*
+JTS WORKING MAP CODE
 let customerResults = customers.results;
 function createProfile() {
     return `
@@ -45,11 +46,9 @@ function createProfile() {
     </div>
     `;
 }
-let pageContent = `<header>Internal Company Directory</header> ${createProfile(customerResults)}`
+let pageContent = createProfile(customerResults);
 document.body.innerHTML = pageContent;
 */
-
-
 
 
 
