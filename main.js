@@ -26,18 +26,15 @@ createPage();
 let customerResults = customers.results;
 function createProfile() {
     return `
-    <div class="profile_container">
+    <div style="margin: 2% 0%;">
         ${customerResults.map(customerProfile =>
-        `<img src="${customerProfile.picture.large}">
-        <li>${customerProfile.name.title}.${customerProfile.name.first} ${customerProfile.name.last}
-        </li>
-        <li>${customerProfile.email}</li>
-        <li>${customerProfile.location.street}</li>
-        <li>${customerProfile.location.city},
-            ${customerProfile.location.state}
-            ${customerProfile.location.postcode}
-        </li>
-        <li>${customerProfile.phone}</li>
+        `
+          <img src=${customerProfiles.picture.large} style="width: 250px; height: 250px;">
+          <h2 style="text-decoration: underline; text-decoration-color: #5BFFC0; font-size: 20px;">${customerProfile.name.first.toUpperCase()} ${customerProfile.name.last.toUpperCase()}</h2>
+          <p id="email_holder" style="font-size: 13px;">${customerProfile.email.toUpperCase()}</p>
+          <li>${customerProfile.location.street}</li>
+          <p>${customerProfile.location.street}<br>${customerProfile.location.city}, ${customerProfile.location.state} ${customerProfile.location.postcode}<br>${customerProfile.cell}<br></p>
+          <span>${customerProfile.id.value}</span>
         `
         )}
     </div>
