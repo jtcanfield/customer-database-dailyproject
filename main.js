@@ -23,11 +23,11 @@ let createPage = () => {
 }
 createPage();
 /*
-let customerInfo = customers.results;
+let customerResults = customers.results;
 function createProfile() {
     return `
     <div class="profile_container">
-        ${customerInfo.map(customerProfile =>
+        ${customerResults.map(customerProfile =>
         `<img src="${customerProfile.picture.large}">
         <li>${customerProfile.name.title}.${customerProfile.name.first} ${customerProfile.name.last}
         </li>
@@ -43,6 +43,6 @@ function createProfile() {
     </div>
     `;
 }
-let pageContent = `<header>Internal Company Directory</header> ${createProfile(customerInfo)}`
+let pageContent = `<header>Internal Company Directory</header> ${createProfile(customerResults)}`
 document.body.innerHTML = pageContent;
 */
