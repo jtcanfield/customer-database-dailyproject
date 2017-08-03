@@ -7,8 +7,8 @@ let createPage = () => {
   <div id="flexbox_project_holder" style="display: flex; justify-content: space-around; flex-flow: row wrap; padding: 2% 10%;"></div>
   `;
   setHeader.innerHTML = holder;
-  let setParent = document.getElementById("flexbox_project_holder");
   for (let i = 0; i < customers.results.length; i++){
+    let setParent = document.getElementById("flexbox_project_holder");
     let holder = `
       <div style="margin: 2% 0%;">
         <img src=${customers.results[i].picture.large} style="width: 250px; height: 250px;">
