@@ -28,7 +28,8 @@ function createProfile() {
     return `
     <h1>INTERNAL COMPANY DIRECTORY</h1>
     <div id="flexbox_project_holder" style="display: flex; justify-content: space-around; flex-flow: row wrap; padding: 2% 10%;">
-        ${customerResults.map(customerProfile =>
+        ${customerResults.map(
+        customerProfile =>
         `
         <div style="margin: 2% 0%;">
           <img src=${customerProfile.picture.large} style="width: 250px; height: 250px;">
@@ -47,6 +48,19 @@ function createProfile() {
 let pageContent = `<header>Internal Company Directory</header> ${createProfile(customerResults)}`
 document.body.innerHTML = pageContent;
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*THOMASES EXAMPLE CODE
 let people = customers.results
 
