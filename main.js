@@ -22,7 +22,7 @@ let createPage = () => {
   }
 }
 createPage();
-/*
+/*JTS WORKING MAP CODE
 let customerResults = customers.results;
 function createProfile() {
     return `
@@ -46,4 +46,33 @@ function createProfile() {
 }
 let pageContent = `<header>Internal Company Directory</header> ${createProfile(customerResults)}`
 document.body.innerHTML = pageContent;
+*/
+/*THOMASES EXAMPLE CODE
+let people = customers.results
+
+function renderPerson(){
+          return `
+          <div class="customers">
+            ${people.map(person => `
+              <div class="customer">
+              <ul>
+                <img src="${person.picture.large}" alt="profile">
+                  <li id="name">${person.name.first} ${person.name.last}</li>
+                  <li>${person.email}</li>
+                  <li>${person.location.street}</li>
+                  <li>${person.location.city} ${person.location.state}, ${person.location.postcode}</li>
+                  <li>${person.cell}</li>
+              </ul>
+              </div>
+              `)}
+            </div>
+          `;
+        }
+
+         let markup = `<header>
+               internal company directory
+                      </header>
+                ${renderPerson(people)}`
+
+         document.body.innerHTML = markup```
 */
