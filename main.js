@@ -40,6 +40,7 @@ function createProfile() {
         </div>
         `
         )}
+        //NEED TO FIGURE OUT WHERE THE COMMA IS AROUND HERE BECAUSE IT INSERTS A COMMA
     </div>
     `;
 }
